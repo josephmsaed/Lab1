@@ -1,4 +1,5 @@
 from xmltodict import parse 
+from dict2xml import dict2xml
 from math import ceil
 # ------------ FUNCTIONS -------------
 
@@ -8,7 +9,7 @@ def xml_to_list(xmlfile):
         xml_str = f.read()
     f.close() 
     xml_dict = parse(xml_str)
-    return xml_dict['fichier']['message']
+    return xml_dict
 
 def message_size(message, BC="SXJJ"):
     # L = 20(bits/word) * n(word) + overhead_com (depends on the communication type BC to RT, RT to BC, RT to RT)
@@ -63,8 +64,8 @@ def max_lp_C(message, messages_list):
     max_C = 0
     for msg in messages_list:
         if message['priority'] < msg['priority']: # 1 is the highest priority
-            if msg['d3'] > max_C:
-                max_C = msg['d3']
+            if msg['DT'] > max_C:
+                max_C = msg['DT']
                 
     return max_C
 
@@ -73,20 +74,38 @@ def sum_hp(message, messages_list, W):
     
     for msg in messages_list:
         if message['priority'] >= msg['priority']:
-            sum += msg['d3'] * ceil(W / ((1/msg['frequency'])*10**6))
+            sum += msg['DT'] * ceil(W / ((1/msg['frequency'])*10**6))
     return sum
     
 def WCRT(message, messages_list):
     previous_W = 0
     current_W = -1
     while True:
-        current_W = message['d3'] + max_lp_C(message, messages_list) + sum_hp(message, messages_list, previous_W)
+        current_W = message['DT'] + max_lp_C(message, messages_list) + sum_hp(message, messages_list, previous_W)
         if current_W == previous_W: # current_w = WCRT
             return current_W
         else:
             previous_W = current_W
 
+def get_shortest_period(messages_list):
+    max_freq = 0
+    for message in messages_list:
+        if message['frequency'] > max_freq:
+            max_freq = message['frequency']
+    
+    return (1/max_freq) * 10**6 # in microseconds
 
+def schedulabity_test(messages_list):
+    T_shortest = get_shortest_period(messages_list)
+    sum = 0
+    for message in messages_list:
+        sum+=message['DT']
+        if sum/T_shortest <= 1:
+            message['Test'] = 'schedulable'
+        else:
+            message['Test'] = 'we dk'
+    
+    return messages_list
 # -------------------------------------------------------
 # -------------------------------------------------------
 
@@ -96,7 +115,7 @@ def main():
     results_list = []
     
     # Step 1 Interpretation of input data
-    xml_list = xml_to_list('xmlB1-periodique.xml')
+    xml_list = xml_to_list('xmlB1-periodique.xml')['fichier']['message']
     print(f'The number of messages in the xml file is: {len(xml_list)}')
     print(f'Each message has the following characteristics: \n{xml_list[0].keys()}')
     print('--------------------------------------------')
@@ -105,25 +124,21 @@ def main():
     print('--------------------------------------------')
 
 
-    # Step 2: Computation of the transmission delay (d3) (L/B)
+    # Step 2: Computation of the transmission delay (DT) (L/B)
     # Compute the total size of each message
     # Deduce the transmission delay of each message by taking into account a link speed of 1Mbps
     
-
     for message in xml_list:
-        results_list.append({'name': message['nom'],'frequency': float( message['frequence']), 'd3' :  transmission_delay(message)  })
+        message['DT'] =  transmission_delay(message)
+        results_list.append({'name': message['nom'],
+                             'frequency': float( message['frequence']),
+                             'mes_size': message['taille_mes'],
+                             'sender': message['emetteur'],
+                             'receiver': message['recepteur'],
+                             'DT' :  transmission_delay(message)  })
 
-    print('2 - transmission delays are calculated')
-    # for message in xml_list:
-    #     name = message['nom']
-    #     if name not in results_dict.keys():
-    #         results_dict[name] = {'trans_delay': transmission_delay(message)}
-    #     else:
-    #         results_dict[name]['trans_delay'] = transmission_delay(message)
-        
-    
+    print('2 - transmission delays are calculated')    
     print('--------------------------------------------')
-    
     
 
     # Step 3: Performance analysis in terms of end-to end delays and access delays (d2)
@@ -134,20 +149,22 @@ def main():
     results_list = set_priorities_RM(results_list)
     for message in results_list:
         eed = WCRT(message, results_list)
-        message['eed'] = eed
-        message['d2'] = eed - message['d3']
+        message['DBEB'] = eed
+        message['DMAC'] = eed - message['DT']
         print(message)
     print('--------------------------------------------')
     
-    
-    
     # Conclude on the schedulability of each message
-    # Sum C_i / microcylce period ?
-
-
+    results_list = schedulabity_test(results_list)
+    
     # Step 4: Output xml file generation 
-        
-
+    results_dict = {'fichier': {'message':results_list}}
+    xml = dict2xml(results_dict, wrap ="", indent ="   ")
+    print(type(xml))
+    f = open("results.xml", "w")
+    f.write(xml)
+    f.close()
+    
 if __name__ =='__main__':
     main()
     
