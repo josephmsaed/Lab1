@@ -3,8 +3,7 @@ from dict2xml import dict2xml
 from math import ceil
 # ------------ FUNCTIONS -------------
 
-def xml_to_list(xmlfile):
-   
+def xml_to_dict(xmlfile):
     with open(xmlfile, 'r') as f:
         xml_str = f.read()
     f.close() 
@@ -59,7 +58,6 @@ def set_priorities_RM(messages_list):
 
     return messages_list
 
-
 def max_lp_C(message, messages_list):
     max_C = 0
     for msg in messages_list:
@@ -95,29 +93,32 @@ def get_shortest_period(messages_list):
     
     return (1/max_freq) * 10**6 # in microseconds
 
-def schedulabity_test(messages_list):
-    T_shortest = get_shortest_period(messages_list)
+def sum_Ci(messages_list):
     sum = 0
     for message in messages_list:
-        sum+=message['DT']
-        if sum/T_shortest <= 1:
-            message['Test'] = 'schedulable'
-        else:
-            message['Test'] = 'we dk'
+        sum += message['DT']
+    return sum
+
+def schedulability_test_wcrt(message):
+    if message['DBEB'] > (1/message['frequency']) * 10**6: # deadlines are violated
+        message['Test'] = 'not schedulable'
+    else:
+        message['Test'] = 'schedulable'
     
-    return messages_list
+    return message   
 # -------------------------------------------------------
 # -------------------------------------------------------
 
 def main():
     
-    results_dict = {}
     results_list = []
     
     # Step 1 Interpretation of input data
-    xml_list = xml_to_list('xmlB1-periodique.xml')['fichier']['message']
+    xml_list = xml_to_dict('xmlB1-periodique.xml')['fichier']['message']
+    
+    print('--------------------------------------------')
     print(f'The number of messages in the xml file is: {len(xml_list)}')
-    print(f'Each message has the following characteristics: \n{xml_list[0].keys()}')
+    print(f'1 - Each message has the following characteristics: \n{xml_list[0].keys()}')
     print('--------------------------------------------')
     for message in xml_list:
         print(message)
@@ -127,7 +128,6 @@ def main():
     # Step 2: Computation of the transmission delay (DT) (L/B)
     # Compute the total size of each message
     # Deduce the transmission delay of each message by taking into account a link speed of 1Mbps
-    
     for message in xml_list:
         message['DT'] =  transmission_delay(message)
         results_list.append({'name': message['nom'],
@@ -144,26 +144,37 @@ def main():
     # Step 3: Performance analysis in terms of end-to end delays and access delays (d2)
     # Calculate the end-to-end delay of each message = wCRT
     # Deduce the access times to the medium (d2)
-    print('End to end and access delays:')
+    print('3 - End to end and access delays are calculated')
     
     results_list = set_priorities_RM(results_list)
     for message in results_list:
         eed = WCRT(message, results_list)
         message['DBEB'] = eed
         message['DMAC'] = eed - message['DT']
-        print(message)
     print('--------------------------------------------')
     
-    # Conclude on the schedulability of each message
-    results_list = schedulabity_test(results_list)
     
+    # Conclude on the schedulability of each message
+    # WCRT schedulabity test:
+    for message in results_list:
+        message = schedulability_test_wcrt(message)
+    
+    # Sufficient Schedulability Condition:
+    Test = sum_Ci(results_list)/get_shortest_period(results_list)
+    print(f"Since the value of test is: {Test} > 1, we cannot conclude on the schedulability of these set of messages using this test.")
+    print('--------------------------------------------')
+     
+     
     # Step 4: Output xml file generation 
     results_dict = {'fichier': {'message':results_list}}
     xml = dict2xml(results_dict, wrap ="", indent ="   ")
-    print(type(xml))
     f = open("results.xml", "w")
     f.write(xml)
     f.close()
+    
+    print("4 - the output xml file is generated.")
+    print('--------------------------------------------')
+    
     
 if __name__ =='__main__':
     main()

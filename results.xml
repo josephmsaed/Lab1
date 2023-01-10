@@ -711,7 +711,7 @@
       <DBEB>30544.0</DBEB>
       <DMAC>29988.0</DMAC>
       <DT>556.0</DT>
-      <Test>we dk</Test>
+      <Test>schedulable</Test>
       <frequency>6.25</frequency>
       <mes_size>00025</mes_size>
       <name>CFV-27</name>
@@ -723,7 +723,7 @@
       <DBEB>30064.0</DBEB>
       <DMAC>29988.0</DMAC>
       <DT>76.0</DT>
-      <Test>we dk</Test>
+      <Test>schedulable</Test>
       <frequency>6.25</frequency>
       <mes_size>00001</mes_size>
       <name>CFV-16</name>
@@ -735,7 +735,7 @@
       <DBEB>30644.0</DBEB>
       <DMAC>29988.0</DMAC>
       <DT>656.0</DT>
-      <Test>we dk</Test>
+      <Test>schedulable</Test>
       <frequency>6.25</frequency>
       <mes_size>00030</mes_size>
       <name>CFV-13</name>
@@ -747,7 +747,7 @@
       <DBEB>30064.0</DBEB>
       <DMAC>29988.0</DMAC>
       <DT>76.0</DT>
-      <Test>we dk</Test>
+      <Test>schedulable</Test>
       <frequency>6.25</frequency>
       <mes_size>00001</mes_size>
       <name>BHT-16</name>
@@ -759,7 +759,7 @@
       <DBEB>30164.0</DBEB>
       <DMAC>29988.0</DMAC>
       <DT>176.0</DT>
-      <Test>we dk</Test>
+      <Test>schedulable</Test>
       <frequency>6.25</frequency>
       <mes_size>00006</mes_size>
       <name>BHT-6</name>
@@ -771,7 +771,7 @@
       <DBEB>30064.0</DBEB>
       <DMAC>29988.0</DMAC>
       <DT>76.0</DT>
-      <Test>we dk</Test>
+      <Test>schedulable</Test>
       <frequency>6.25</frequency>
       <mes_size>00001</mes_size>
       <name>HULP-16</name>
@@ -783,7 +783,7 @@
       <DBEB>30164.0</DBEB>
       <DMAC>29988.0</DMAC>
       <DT>176.0</DT>
-      <Test>we dk</Test>
+      <Test>schedulable</Test>
       <frequency>6.25</frequency>
       <mes_size>00006</mes_size>
       <name>HULP-7</name>
@@ -795,7 +795,7 @@
       <DBEB>30064.0</DBEB>
       <DMAC>29988.0</DMAC>
       <DT>76.0</DT>
-      <Test>we dk</Test>
+      <Test>schedulable</Test>
       <frequency>6.25</frequency>
       <mes_size>00001</mes_size>
       <name>DYYJ-206</name>
@@ -807,7 +807,7 @@
       <DBEB>30064.0</DBEB>
       <DMAC>29988.0</DMAC>
       <DT>76.0</DT>
-      <Test>we dk</Test>
+      <Test>schedulable</Test>
       <frequency>6.25</frequency>
       <mes_size>00001</mes_size>
       <name>DYYJ-16</name>
@@ -819,7 +819,7 @@
       <DBEB>30184.0</DBEB>
       <DMAC>29988.0</DMAC>
       <DT>196.0</DT>
-      <Test>we dk</Test>
+      <Test>schedulable</Test>
       <frequency>6.25</frequency>
       <mes_size>00007</mes_size>
       <name>DYYJ-2</name>
@@ -831,7 +831,7 @@
       <DBEB>30064.0</DBEB>
       <DMAC>29988.0</DMAC>
       <DT>76.0</DT>
-      <Test>we dk</Test>
+      <Test>schedulable</Test>
       <frequency>6.25</frequency>
       <mes_size>00001</mes_size>
       <name>DYYJ-0</name>
