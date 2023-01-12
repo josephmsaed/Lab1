@@ -169,7 +169,7 @@ def sum_hp(message, messages_list, W):
     """
     sum = 0
     for msg in messages_list:
-        if message['priority'] >= msg['priority']:
+        if message['priority'] >= msg['priority'] and message['nom'] != msg['nom']:
             sum += msg['DT'] * ceil(W / ((1/msg['frequence'])*10**6))
     return sum
     
@@ -262,8 +262,6 @@ def write_xmlfile(results, filename):
     f = open(filename + ".xml", "w")
     f.write(xml)
     f.close()
-
-
 
 # -------------------------------------------------------
 # -------------------------------------------------------
