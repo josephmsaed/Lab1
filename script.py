@@ -20,23 +20,59 @@ def xml_to_dict(xmlfile):
     return xml_dict
 
 
-def message_size(message, BC="SXJJ"):
-    """Computes the message length in bits taking into account the overhead length.
+def message_length(message, messages_list, BC="SXJJ"):
+    """Computes the total message length in bits taking into account the overhead length and if it is sent to many receivers
 
     Args:
         message (dictionary): must contain the message's characteristics in its keys like: 'emeteur', 'recepteur' and 'taille_mes'.
+        messages_list (list): list of dictionaries containing all the messages and their characteristics.
         BC (str, optional): the Master's name. Defaults to "SXJJ".
 
     Returns:
-        int: length of the message in bits.
-    """
+        int: total length of the message in bits
+    """    
     # L = 20(bits/word) * n(word) + overhead_com (depends on the communication type BC to RT, RT to BC, RT to RT)
-    overhead_com = 56 if BC == message['emetteur'] or BC == message['recepteur'] else 106
-    L = 20 * int(message['taille_mes']) + overhead_com
+    sender = message['emetteur']
+    receivers = message['recepteur'].split()
+    
+    if 'TOUS' not in receivers:
+        L = 0
+        for receiver in receivers:
+            overhead_com = 56 if (sender == BC) or (receiver == BC) else 106
+            L += (20 * int(message['taille_mes']) + overhead_com)
+        
+    else: # recepteur = 'TOUS'
+        components = get_components(messages_list)
+        if sender == BC:
+            overhead_com = 56
+            L = (20 * int(message['taille_mes']) + overhead_com) * (len(components) - 1)
+        
+        else:
+            L = (20 * int(message['taille_mes']) + 106) * (len(components) - 2) + (
+                20 * int(message['taille_mes']) + 56)
+        
     return L
+
+
+def get_components(messages_list):
+    """Stores all the names of the components (masters and slaves) in a list
+
+    Args:
+        messages_list (list): list of dictionaries containing all the messages and their characteristics.
+
+    Returns:
+        list: list of strings containing components' names.
+    """
+    components_list = []
+    for message in messages_list:
+        if message['emetteur'] not in components_list:
+            components_list.append(message['emetteur'])
+        elif message['recepteur'] not in components_list:
+            components_list.append(message['recepteur'])
+    return components_list
+            
     
-    
-def transmission_delay(message, link_speed=1, BC="SXJJ"):
+def transmission_delay(message,messages_list, link_speed=1, BC="SXJJ"):
     """Calculates the transmission delay of message.
 
     Args:
@@ -47,12 +83,12 @@ def transmission_delay(message, link_speed=1, BC="SXJJ"):
     Returns:
         float: the transmission delay of a message in microseconds.
     """
-    L = message_size(message, BC)
+    L = message_length(message,messages_list, BC)
     return L/link_speed
 
 
 def quicksort(messages_list):
-    """ Recursive function. Sorts the list of dictionaries in the ascending order of the key 'frequency'.
+    """ Recursive function. Sorts the list of dictionaries in the ascending order of the key 'frequence'.
 
     Args:
         messages_list (list): list of dictionaries containing all the messages and their characteristics.
@@ -67,7 +103,7 @@ def quicksort(messages_list):
         inf_list = []
         sup_list = []
         for elt in messages_list[1:]:
-            if elt['frequency'] < pivot['frequency']:
+            if elt['frequence'] < pivot['frequence']:
                 inf_list.append(elt)
             else:
                 sup_list.append(elt)
@@ -81,7 +117,7 @@ def set_priorities_RM(messages_list):
 
     Args:
         messages_list (list): list of dictionaries containing all the messages and their characteristics.
-                            its elements must have the key 'frequency'.
+                            its elements must have the key 'frequence'.
 
     Returns:
         list: list of dictionaries containing a new key 'priority'.
@@ -92,7 +128,7 @@ def set_priorities_RM(messages_list):
     prio = 1
     messages_list[0]['priority'] = prio
     for i in range(1,len(messages_list)):
-        if messages_list[i]['frequency'] != messages_list[i-1]['frequency']:
+        if messages_list[i]['frequence'] != messages_list[i-1]['frequence']:
                 prio +=1
         messages_list[i]['priority'] = prio
 
@@ -124,7 +160,7 @@ def sum_hp(message, messages_list, W):
 
     Args:
         message (dicionary): the message for which WCRT will be calculated. 
-                            Must have the following keys: 'priority', 'frequency' and 'DT'.
+                            Must have the following keys: 'priority', 'frequence' and 'DT'.
         messages_list (list): list of dictionaries containing all the messages and their characteristics.
         W (float): the W calculated in a previous iteration.
 
@@ -134,7 +170,7 @@ def sum_hp(message, messages_list, W):
     sum = 0
     for msg in messages_list:
         if message['priority'] >= msg['priority']:
-            sum += msg['DT'] * ceil(W / ((1/msg['frequency'])*10**6))
+            sum += msg['DT'] * ceil(W / ((1/msg['frequence'])*10**6))
     return sum
     
 def WCRT(message, messages_list):
@@ -163,15 +199,15 @@ def get_shortest_period(messages_list):
 
     Args:
         messages_list (list): list of dictionaries containing all the messages and their characteristics.
-                            Must have the following key: 'frequency'.
+                            Must have the following key: 'frequence'.
 
     Returns:
         float: the shortest period found in the input list.
     """
     max_freq = 0
     for message in messages_list:
-        if message['frequency'] > max_freq:
-            max_freq = message['frequency']
+        if message['frequence'] > max_freq:
+            max_freq = message['frequence']
     
     return (1/max_freq) * 10**6 # in microseconds
 
@@ -197,17 +233,38 @@ def schedulability_test_wcrt(message):
     the WCRT theorem for Rate Monotonic.
 
     Args:
-        message (dictionary): the message in question. Must contain the following keys: 'DBEB' and 'Frequency'
+        message (dictionary): the message in question. Must contain the following keys: 'DBEB' and 'frequence'
 
     Returns:
         dictionary: the input dictionary with one added key 'Test'.
     """
-    if message['DBEB'] > (1/message['frequency']) * 10**6: # deadlines are violated
+    if message['DBEB'] > (1/message['frequence']) * 10**6: # deadlines are violated
         message['Test'] = 'not schedulable'
     else:
         message['Test'] = 'schedulable'
     
-    return message   
+    return message
+
+
+def write_xmlfile(results, filename):
+    """Writes the data included in the results list in an xml file filename.
+
+    Args:
+        results (list): list of messages containing all of its original and new characteristics.
+        filename (string): the name of the xml file to be written.
+    """
+    for msg in results:
+        if 'priority' in msg.keys():
+            del msg['priority']
+    
+    results_dict = {'fichier': {'message':results}}
+    xml = dict2xml(results_dict, wrap ="", indent ="   ")
+    f = open(filename + ".xml", "w")
+    f.write(xml)
+    f.close()
+
+
+
 # -------------------------------------------------------
 # -------------------------------------------------------
 
@@ -231,12 +288,12 @@ def main():
     # Compute the total size of each message
     # Deduce the transmission delay of each message by taking into account a link speed of 1Mbps
     for message in xml_list:
-        results_list.append({'name': message['nom'],
-                             'frequency': float( message['frequence']),
-                             'mes_size': message['taille_mes'],
-                             'sender': message['emetteur'],
-                             'receiver': message['recepteur'],
-                             'DT' :  transmission_delay(message)  })
+        results_list.append({'nom': message['nom'],
+                             'frequence': float( message['frequence']),
+                             'taille_mes': message['taille_mes'],
+                             'emetteur': message['emetteur'],
+                             'recepteur': message['recepteur'],
+                             'DT' :  transmission_delay(message, results_list)  })
 
     print('2 - transmission delays are calculated')    
     print('--------------------------------------------')
@@ -260,6 +317,9 @@ def main():
     for message in results_list:
         message = schedulability_test_wcrt(message)
     
+    print('Individual schedulability tests were made')
+    print('--------------------------------------------')
+    
     # Sufficient Schedulability Condition:
     Test = sum_Ci(results_list)/get_shortest_period(results_list)
     print(f"Since the value of test is: {Test} > 1, we cannot conclude on the schedulability of these set of messages using this test.")
@@ -267,14 +327,13 @@ def main():
      
      
     # Step 4: Output xml file generation 
-    results_dict = {'fichier': {'message':results_list}}
-    xml = dict2xml(results_dict, wrap ="", indent ="   ")
-    f = open("results.xml", "w")
-    f.write(xml)
-    f.close()
+    
+    write_xmlfile(results_list, 'results')
+    
     
     print("4 - the output xml file is generated.")
     print('--------------------------------------------')
+    
     
     
 if __name__ =='__main__':

@@ -1,842 +1,772 @@
 <fichier>
    <message>
-      <DBEB>9610.0</DBEB>
-      <DMAC>8864.0</DMAC>
-      <DT>746.0</DT>
-      <Test>schedulable</Test>
-      <frequency>50.0</frequency>
-      <mes_size>00032</mes_size>
-      <name>QZJ-141</name>
-      <priority>1</priority>
-      <receiver>TOUS</receiver>
-      <sender>QZJ</sender>
+      <DBEB>39048.0</DBEB>
+      <DMAC>31638.0</DMAC>
+      <DT>7410.0</DT>
+      <Test>not schedulable</Test>
+      <emetteur>QZJ</emetteur>
+      <frequence>50.0</frequence>
+      <nom>QZJ-141</nom>
+      <recepteur>TOUS</recepteur>
+      <taille_mes>00032</taille_mes>
    </message>
    <message>
-      <DBEB>9570.0</DBEB>
-      <DMAC>8864.0</DMAC>
-      <DT>706.0</DT>
+      <DBEB>17562.0</DBEB>
+      <DMAC>16200.0</DMAC>
+      <DT>1362.0</DT>
       <Test>schedulable</Test>
-      <frequency>50.0</frequency>
-      <mes_size>00030</mes_size>
-      <name>QZJ-57</name>
-      <priority>1</priority>
-      <receiver>CFV SXJJ</receiver>
-      <sender>QZJ</sender>
+      <emetteur>QZJ</emetteur>
+      <frequence>50.0</frequence>
+      <nom>QZJ-57</nom>
+      <recepteur>CFV SXJJ</recepteur>
+      <taille_mes>00030</taille_mes>
    </message>
    <message>
-      <DBEB>9490.0</DBEB>
-      <DMAC>8864.0</DMAC>
+      <DBEB>16826.0</DBEB>
+      <DMAC>16200.0</DMAC>
       <DT>626.0</DT>
       <Test>schedulable</Test>
-      <frequency>50.0</frequency>
-      <mes_size>00026</mes_size>
-      <name>QZJ-56</name>
-      <priority>1</priority>
-      <receiver>CFV</receiver>
-      <sender>QZJ</sender>
+      <emetteur>QZJ</emetteur>
+      <frequence>50.0</frequence>
+      <nom>QZJ-56</nom>
+      <recepteur>CFV</recepteur>
+      <taille_mes>00026</taille_mes>
    </message>
    <message>
-      <DBEB>9460.0</DBEB>
-      <DMAC>8864.0</DMAC>
+      <DBEB>16796.0</DBEB>
+      <DMAC>16200.0</DMAC>
       <DT>596.0</DT>
       <Test>schedulable</Test>
-      <frequency>50.0</frequency>
-      <mes_size>00027</mes_size>
-      <name>QZJ-29</name>
-      <priority>1</priority>
-      <receiver>SXJJ</receiver>
-      <sender>QZJ</sender>
+      <emetteur>QZJ</emetteur>
+      <frequence>50.0</frequence>
+      <nom>QZJ-29</nom>
+      <recepteur>SXJJ</recepteur>
+      <taille_mes>00027</taille_mes>
    </message>
    <message>
-      <DBEB>9610.0</DBEB>
-      <DMAC>8864.0</DMAC>
+      <DBEB>16946.0</DBEB>
+      <DMAC>16200.0</DMAC>
       <DT>746.0</DT>
       <Test>schedulable</Test>
-      <frequency>50.0</frequency>
-      <mes_size>00032</mes_size>
-      <name>QZJ-18</name>
-      <priority>1</priority>
-      <receiver>EQF1</receiver>
-      <sender>QZJ</sender>
+      <emetteur>QZJ</emetteur>
+      <frequence>50.0</frequence>
+      <nom>QZJ-18</nom>
+      <recepteur>EQF1</recepteur>
+      <taille_mes>00032</taille_mes>
    </message>
    <message>
-      <DBEB>9610.0</DBEB>
-      <DMAC>8864.0</DMAC>
+      <DBEB>16946.0</DBEB>
+      <DMAC>16200.0</DMAC>
       <DT>746.0</DT>
       <Test>schedulable</Test>
-      <frequency>50.0</frequency>
-      <mes_size>00032</mes_size>
-      <name>QZJ-17</name>
-      <priority>1</priority>
-      <receiver>EQF1</receiver>
-      <sender>QZJ</sender>
+      <emetteur>QZJ</emetteur>
+      <frequence>50.0</frequence>
+      <nom>QZJ-17</nom>
+      <recepteur>EQF1</recepteur>
+      <taille_mes>00032</taille_mes>
    </message>
    <message>
-      <DBEB>9210.0</DBEB>
-      <DMAC>8864.0</DMAC>
+      <DBEB>16546.0</DBEB>
+      <DMAC>16200.0</DMAC>
       <DT>346.0</DT>
       <Test>schedulable</Test>
-      <frequency>50.0</frequency>
-      <mes_size>00012</mes_size>
-      <name>QZJ-8</name>
-      <priority>1</priority>
-      <receiver>EQF1</receiver>
-      <sender>QZJ</sender>
+      <emetteur>QZJ</emetteur>
+      <frequence>50.0</frequence>
+      <nom>QZJ-8</nom>
+      <recepteur>EQF1</recepteur>
+      <taille_mes>00012</taille_mes>
    </message>
    <message>
-      <DBEB>9560.0</DBEB>
-      <DMAC>8864.0</DMAC>
+      <DBEB>16896.0</DBEB>
+      <DMAC>16200.0</DMAC>
       <DT>696.0</DT>
       <Test>schedulable</Test>
-      <frequency>50.0</frequency>
-      <mes_size>00032</mes_size>
-      <name>CFV-37</name>
-      <priority>1</priority>
-      <receiver>SXJJ</receiver>
-      <sender>CFV</sender>
+      <emetteur>CFV</emetteur>
+      <frequence>50.0</frequence>
+      <nom>CFV-37</nom>
+      <recepteur>SXJJ</recepteur>
+      <taille_mes>00032</taille_mes>
    </message>
    <message>
-      <DBEB>9560.0</DBEB>
-      <DMAC>8864.0</DMAC>
+      <DBEB>16896.0</DBEB>
+      <DMAC>16200.0</DMAC>
       <DT>696.0</DT>
       <Test>schedulable</Test>
-      <frequency>50.0</frequency>
-      <mes_size>00032</mes_size>
-      <name>CFV-36</name>
-      <priority>1</priority>
-      <receiver>SXJJ</receiver>
-      <sender>CFV</sender>
+      <emetteur>CFV</emetteur>
+      <frequence>50.0</frequence>
+      <nom>CFV-36</nom>
+      <recepteur>SXJJ</recepteur>
+      <taille_mes>00032</taille_mes>
    </message>
    <message>
-      <DBEB>9020.0</DBEB>
-      <DMAC>8864.0</DMAC>
+      <DBEB>16356.0</DBEB>
+      <DMAC>16200.0</DMAC>
       <DT>156.0</DT>
       <Test>schedulable</Test>
-      <frequency>50.0</frequency>
-      <mes_size>00005</mes_size>
-      <name>CFV-35</name>
-      <priority>1</priority>
-      <receiver>SXJJ</receiver>
-      <sender>CFV</sender>
+      <emetteur>CFV</emetteur>
+      <frequence>50.0</frequence>
+      <nom>CFV-35</nom>
+      <recepteur>SXJJ</recepteur>
+      <taille_mes>00005</taille_mes>
    </message>
    <message>
-      <DBEB>9280.0</DBEB>
-      <DMAC>8864.0</DMAC>
+      <DBEB>16616.0</DBEB>
+      <DMAC>16200.0</DMAC>
       <DT>416.0</DT>
       <Test>schedulable</Test>
-      <frequency>50.0</frequency>
-      <mes_size>00018</mes_size>
-      <name>CFV-23</name>
-      <priority>1</priority>
-      <receiver>SXJJ</receiver>
-      <sender>CFV</sender>
+      <emetteur>CFV</emetteur>
+      <frequence>50.0</frequence>
+      <nom>CFV-23</nom>
+      <recepteur>SXJJ</recepteur>
+      <taille_mes>00018</taille_mes>
    </message>
    <message>
-      <DBEB>9380.0</DBEB>
-      <DMAC>8864.0</DMAC>
+      <DBEB>16716.0</DBEB>
+      <DMAC>16200.0</DMAC>
       <DT>516.0</DT>
       <Test>schedulable</Test>
-      <frequency>50.0</frequency>
-      <mes_size>00023</mes_size>
-      <name>CFV-21</name>
-      <priority>1</priority>
-      <receiver>SXJJ</receiver>
-      <sender>CFV</sender>
+      <emetteur>CFV</emetteur>
+      <frequence>50.0</frequence>
+      <nom>CFV-21</nom>
+      <recepteur>SXJJ</recepteur>
+      <taille_mes>00023</taille_mes>
    </message>
    <message>
-      <DBEB>9070.0</DBEB>
-      <DMAC>8864.0</DMAC>
+      <DBEB>16406.0</DBEB>
+      <DMAC>16200.0</DMAC>
       <DT>206.0</DT>
       <Test>schedulable</Test>
-      <frequency>50.0</frequency>
-      <mes_size>00005</mes_size>
-      <name>CFV-5</name>
-      <priority>1</priority>
-      <receiver>QZJ</receiver>
-      <sender>CFV</sender>
+      <emetteur>CFV</emetteur>
+      <frequence>50.0</frequence>
+      <nom>CFV-5</nom>
+      <recepteur>QZJ</recepteur>
+      <taille_mes>00005</taille_mes>
    </message>
    <message>
-      <DBEB>9120.0</DBEB>
-      <DMAC>8864.0</DMAC>
+      <DBEB>16456.0</DBEB>
+      <DMAC>16200.0</DMAC>
       <DT>256.0</DT>
       <Test>schedulable</Test>
-      <frequency>50.0</frequency>
-      <mes_size>00010</mes_size>
-      <name>CFV-3</name>
-      <priority>1</priority>
-      <receiver>SXJJ</receiver>
-      <sender>CFV</sender>
+      <emetteur>CFV</emetteur>
+      <frequence>50.0</frequence>
+      <nom>CFV-3</nom>
+      <recepteur>SXJJ</recepteur>
+      <taille_mes>00010</taille_mes>
    </message>
    <message>
-      <DBEB>8940.0</DBEB>
-      <DMAC>8864.0</DMAC>
+      <DBEB>16276.0</DBEB>
+      <DMAC>16200.0</DMAC>
       <DT>76.0</DT>
       <Test>schedulable</Test>
-      <frequency>50.0</frequency>
-      <mes_size>00001</mes_size>
-      <name>CFV-0</name>
-      <priority>1</priority>
-      <receiver>SXJJ</receiver>
-      <sender>CFV</sender>
+      <emetteur>CFV</emetteur>
+      <frequence>50.0</frequence>
+      <nom>CFV-0</nom>
+      <recepteur>SXJJ</recepteur>
+      <taille_mes>00001</taille_mes>
    </message>
    <message>
-      <DBEB>8940.0</DBEB>
-      <DMAC>8864.0</DMAC>
+      <DBEB>16276.0</DBEB>
+      <DMAC>16200.0</DMAC>
       <DT>76.0</DT>
       <Test>schedulable</Test>
-      <frequency>50.0</frequency>
-      <mes_size>00001</mes_size>
-      <name>BHT-0</name>
-      <priority>1</priority>
-      <receiver>SXJJ</receiver>
-      <sender>BHT</sender>
+      <emetteur>BHT</emetteur>
+      <frequence>50.0</frequence>
+      <nom>BHT-0</nom>
+      <recepteur>SXJJ</recepteur>
+      <taille_mes>00001</taille_mes>
    </message>
    <message>
-      <DBEB>9100.0</DBEB>
-      <DMAC>8864.0</DMAC>
+      <DBEB>16436.0</DBEB>
+      <DMAC>16200.0</DMAC>
       <DT>236.0</DT>
       <Test>schedulable</Test>
-      <frequency>50.0</frequency>
-      <mes_size>00009</mes_size>
-      <name>HULP-4</name>
-      <priority>1</priority>
-      <receiver>SXJJ</receiver>
-      <sender>HULP</sender>
+      <emetteur>HULP</emetteur>
+      <frequence>50.0</frequence>
+      <nom>HULP-4</nom>
+      <recepteur>SXJJ</recepteur>
+      <taille_mes>00009</taille_mes>
    </message>
    <message>
-      <DBEB>9140.0</DBEB>
-      <DMAC>8864.0</DMAC>
+      <DBEB>16476.0</DBEB>
+      <DMAC>16200.0</DMAC>
       <DT>276.0</DT>
       <Test>schedulable</Test>
-      <frequency>50.0</frequency>
-      <mes_size>00011</mes_size>
-      <name>HULP-2</name>
-      <priority>1</priority>
-      <receiver>SXJJ</receiver>
-      <sender>HULP</sender>
+      <emetteur>HULP</emetteur>
+      <frequence>50.0</frequence>
+      <nom>HULP-2</nom>
+      <recepteur>SXJJ</recepteur>
+      <taille_mes>00011</taille_mes>
    </message>
    <message>
-      <DBEB>9296.0</DBEB>
-      <DMAC>9080.0</DMAC>
+      <DBEB>16632.0</DBEB>
+      <DMAC>16416.0</DMAC>
       <DT>216.0</DT>
       <Test>schedulable</Test>
-      <frequency>25.0</frequency>
-      <mes_size>00008</mes_size>
-      <name>CFV-28</name>
-      <priority>2</priority>
-      <receiver>SXJJ</receiver>
-      <sender>CFV</sender>
+      <emetteur>CFV</emetteur>
+      <frequence>25.0</frequence>
+      <nom>CFV-28</nom>
+      <recepteur>SXJJ</recepteur>
+      <taille_mes>00008</taille_mes>
    </message>
    <message>
-      <DBEB>9308.0</DBEB>
-      <DMAC>9232.0</DMAC>
+      <DBEB>16644.0</DBEB>
+      <DMAC>16568.0</DMAC>
       <DT>76.0</DT>
       <Test>schedulable</Test>
-      <frequency>12.5</frequency>
-      <mes_size>00001</mes_size>
-      <name>QZJ-0</name>
-      <priority>3</priority>
-      <receiver>SXJJ</receiver>
-      <sender>QZJ</sender>
+      <emetteur>QZJ</emetteur>
+      <frequence>12.5</frequence>
+      <nom>QZJ-0</nom>
+      <recepteur>SXJJ</recepteur>
+      <taille_mes>00001</taille_mes>
    </message>
    <message>
-      <DBEB>9308.0</DBEB>
-      <DMAC>9232.0</DMAC>
+      <DBEB>16644.0</DBEB>
+      <DMAC>16568.0</DMAC>
       <DT>76.0</DT>
       <Test>schedulable</Test>
-      <frequency>12.5</frequency>
-      <mes_size>00001</mes_size>
-      <name>HULP-0</name>
-      <priority>3</priority>
-      <receiver>SXJJ</receiver>
-      <sender>HULP</sender>
+      <emetteur>HULP</emetteur>
+      <frequence>12.5</frequence>
+      <nom>HULP-0</nom>
+      <recepteur>SXJJ</recepteur>
+      <taille_mes>00001</taille_mes>
    </message>
    <message>
-      <DBEB>30064.0</DBEB>
-      <DMAC>29988.0</DMAC>
+      <DBEB>76152.0</DBEB>
+      <DMAC>76076.0</DMAC>
       <DT>76.0</DT>
       <Test>schedulable</Test>
-      <frequency>6.25</frequency>
-      <mes_size>00001</mes_size>
-      <name>SXJJ-570</name>
-      <priority>4</priority>
-      <receiver>UKQ</receiver>
-      <sender>SXJJ</sender>
+      <emetteur>SXJJ</emetteur>
+      <frequence>6.25</frequence>
+      <nom>SXJJ-570</nom>
+      <recepteur>UKQ</recepteur>
+      <taille_mes>00001</taille_mes>
    </message>
    <message>
-      <DBEB>30064.0</DBEB>
-      <DMAC>29988.0</DMAC>
+      <DBEB>76152.0</DBEB>
+      <DMAC>76076.0</DMAC>
       <DT>76.0</DT>
       <Test>schedulable</Test>
-      <frequency>6.25</frequency>
-      <mes_size>00001</mes_size>
-      <name>SXJJ-569</name>
-      <priority>4</priority>
-      <receiver>RS</receiver>
-      <sender>SXJJ</sender>
+      <emetteur>SXJJ</emetteur>
+      <frequence>6.25</frequence>
+      <nom>SXJJ-569</nom>
+      <recepteur>RS</recepteur>
+      <taille_mes>00001</taille_mes>
    </message>
    <message>
-      <DBEB>30084.0</DBEB>
-      <DMAC>29988.0</DMAC>
+      <DBEB>76172.0</DBEB>
+      <DMAC>76076.0</DMAC>
       <DT>96.0</DT>
       <Test>schedulable</Test>
-      <frequency>6.25</frequency>
-      <mes_size>00002</mes_size>
-      <name>SXJJ-568</name>
-      <priority>4</priority>
-      <receiver>APIK</receiver>
-      <sender>SXJJ</sender>
+      <emetteur>SXJJ</emetteur>
+      <frequence>6.25</frequence>
+      <nom>SXJJ-568</nom>
+      <recepteur>APIK</recepteur>
+      <taille_mes>00002</taille_mes>
    </message>
    <message>
-      <DBEB>30084.0</DBEB>
-      <DMAC>29988.0</DMAC>
+      <DBEB>76172.0</DBEB>
+      <DMAC>76076.0</DMAC>
       <DT>96.0</DT>
       <Test>schedulable</Test>
-      <frequency>6.25</frequency>
-      <mes_size>00002</mes_size>
-      <name>SXJJ-567</name>
-      <priority>4</priority>
-      <receiver>BHUJ</receiver>
-      <sender>SXJJ</sender>
+      <emetteur>SXJJ</emetteur>
+      <frequence>6.25</frequence>
+      <nom>SXJJ-567</nom>
+      <recepteur>BHUJ</recepteur>
+      <taille_mes>00002</taille_mes>
    </message>
    <message>
-      <DBEB>30124.0</DBEB>
-      <DMAC>29988.0</DMAC>
+      <DBEB>76212.0</DBEB>
+      <DMAC>76076.0</DMAC>
       <DT>136.0</DT>
       <Test>schedulable</Test>
-      <frequency>6.25</frequency>
-      <mes_size>00004</mes_size>
-      <name>SXJJ-566</name>
-      <priority>4</priority>
-      <receiver>RTYJ</receiver>
-      <sender>SXJJ</sender>
+      <emetteur>SXJJ</emetteur>
+      <frequence>6.25</frequence>
+      <nom>SXJJ-566</nom>
+      <recepteur>RTYJ</recepteur>
+      <taille_mes>00004</taille_mes>
    </message>
    <message>
-      <DBEB>30064.0</DBEB>
-      <DMAC>29988.0</DMAC>
+      <DBEB>76152.0</DBEB>
+      <DMAC>76076.0</DMAC>
       <DT>76.0</DT>
       <Test>schedulable</Test>
-      <frequency>6.25</frequency>
-      <mes_size>00001</mes_size>
-      <name>SXJJ-565</name>
-      <priority>4</priority>
-      <receiver>UBJ</receiver>
-      <sender>SXJJ</sender>
+      <emetteur>SXJJ</emetteur>
+      <frequence>6.25</frequence>
+      <nom>SXJJ-565</nom>
+      <recepteur>UBJ</recepteur>
+      <taille_mes>00001</taille_mes>
    </message>
    <message>
-      <DBEB>30064.0</DBEB>
-      <DMAC>29988.0</DMAC>
+      <DBEB>76152.0</DBEB>
+      <DMAC>76076.0</DMAC>
       <DT>76.0</DT>
       <Test>schedulable</Test>
-      <frequency>6.25</frequency>
-      <mes_size>00001</mes_size>
-      <name>SXJJ-564</name>
-      <priority>4</priority>
-      <receiver>THW</receiver>
-      <sender>SXJJ</sender>
+      <emetteur>SXJJ</emetteur>
+      <frequence>6.25</frequence>
+      <nom>SXJJ-564</nom>
+      <recepteur>THW</recepteur>
+      <taille_mes>00001</taille_mes>
    </message>
    <message>
-      <DBEB>30084.0</DBEB>
-      <DMAC>29988.0</DMAC>
+      <DBEB>76172.0</DBEB>
+      <DMAC>76076.0</DMAC>
       <DT>96.0</DT>
       <Test>schedulable</Test>
-      <frequency>6.25</frequency>
-      <mes_size>00002</mes_size>
-      <name>SXJJ-563</name>
-      <priority>4</priority>
-      <receiver>BYNC</receiver>
-      <sender>SXJJ</sender>
+      <emetteur>SXJJ</emetteur>
+      <frequence>6.25</frequence>
+      <nom>SXJJ-563</nom>
+      <recepteur>BYNC</recepteur>
+      <taille_mes>00002</taille_mes>
    </message>
    <message>
-      <DBEB>30084.0</DBEB>
-      <DMAC>29988.0</DMAC>
+      <DBEB>76172.0</DBEB>
+      <DMAC>76076.0</DMAC>
       <DT>96.0</DT>
       <Test>schedulable</Test>
-      <frequency>6.25</frequency>
-      <mes_size>00002</mes_size>
-      <name>SXJJ-562</name>
-      <priority>4</priority>
-      <receiver>CFV</receiver>
-      <sender>SXJJ</sender>
+      <emetteur>SXJJ</emetteur>
+      <frequence>6.25</frequence>
+      <nom>SXJJ-562</nom>
+      <recepteur>CFV</recepteur>
+      <taille_mes>00002</taille_mes>
    </message>
    <message>
-      <DBEB>30084.0</DBEB>
-      <DMAC>29988.0</DMAC>
+      <DBEB>76172.0</DBEB>
+      <DMAC>76076.0</DMAC>
       <DT>96.0</DT>
       <Test>schedulable</Test>
-      <frequency>6.25</frequency>
-      <mes_size>00002</mes_size>
-      <name>SXJJ-561</name>
-      <priority>4</priority>
-      <receiver>AFGD</receiver>
-      <sender>SXJJ</sender>
+      <emetteur>SXJJ</emetteur>
+      <frequence>6.25</frequence>
+      <nom>SXJJ-561</nom>
+      <recepteur>AFGD</recepteur>
+      <taille_mes>00002</taille_mes>
    </message>
    <message>
-      <DBEB>30084.0</DBEB>
-      <DMAC>29988.0</DMAC>
+      <DBEB>76172.0</DBEB>
+      <DMAC>76076.0</DMAC>
       <DT>96.0</DT>
       <Test>schedulable</Test>
-      <frequency>6.25</frequency>
-      <mes_size>00002</mes_size>
-      <name>SXJJ-560</name>
-      <priority>4</priority>
-      <receiver>HULP</receiver>
-      <sender>SXJJ</sender>
+      <emetteur>SXJJ</emetteur>
+      <frequence>6.25</frequence>
+      <nom>SXJJ-560</nom>
+      <recepteur>HULP</recepteur>
+      <taille_mes>00002</taille_mes>
    </message>
    <message>
-      <DBEB>30064.0</DBEB>
-      <DMAC>29988.0</DMAC>
+      <DBEB>76152.0</DBEB>
+      <DMAC>76076.0</DMAC>
       <DT>76.0</DT>
       <Test>schedulable</Test>
-      <frequency>6.25</frequency>
-      <mes_size>00001</mes_size>
-      <name>SXJJ-559</name>
-      <priority>4</priority>
-      <receiver>QZJ</receiver>
-      <sender>SXJJ</sender>
+      <emetteur>SXJJ</emetteur>
+      <frequence>6.25</frequence>
+      <nom>SXJJ-559</nom>
+      <recepteur>QZJ</recepteur>
+      <taille_mes>00001</taille_mes>
    </message>
    <message>
-      <DBEB>30064.0</DBEB>
-      <DMAC>29988.0</DMAC>
+      <DBEB>76152.0</DBEB>
+      <DMAC>76076.0</DMAC>
       <DT>76.0</DT>
       <Test>schedulable</Test>
-      <frequency>6.25</frequency>
-      <mes_size>00001</mes_size>
-      <name>SXJJ-558</name>
-      <priority>4</priority>
-      <receiver>WDSQ</receiver>
-      <sender>SXJJ</sender>
+      <emetteur>SXJJ</emetteur>
+      <frequence>6.25</frequence>
+      <nom>SXJJ-558</nom>
+      <recepteur>WDSQ</recepteur>
+      <taille_mes>00001</taille_mes>
    </message>
    <message>
-      <DBEB>30644.0</DBEB>
-      <DMAC>29988.0</DMAC>
+      <DBEB>76732.0</DBEB>
+      <DMAC>76076.0</DMAC>
       <DT>656.0</DT>
       <Test>schedulable</Test>
-      <frequency>6.25</frequency>
-      <mes_size>00030</mes_size>
-      <name>QZJ-33</name>
-      <priority>4</priority>
-      <receiver>SXJJ</receiver>
-      <sender>QZJ</sender>
+      <emetteur>QZJ</emetteur>
+      <frequence>6.25</frequence>
+      <nom>QZJ-33</nom>
+      <recepteur>SXJJ</recepteur>
+      <taille_mes>00030</taille_mes>
    </message>
    <message>
-      <DBEB>30604.0</DBEB>
-      <DMAC>29988.0</DMAC>
+      <DBEB>76692.0</DBEB>
+      <DMAC>76076.0</DMAC>
       <DT>616.0</DT>
       <Test>schedulable</Test>
-      <frequency>6.25</frequency>
-      <mes_size>00028</mes_size>
-      <name>QZJ-31</name>
-      <priority>4</priority>
-      <receiver>SXJJ</receiver>
-      <sender>QZJ</sender>
+      <emetteur>QZJ</emetteur>
+      <frequence>6.25</frequence>
+      <nom>QZJ-31</nom>
+      <recepteur>SXJJ</recepteur>
+      <taille_mes>00028</taille_mes>
    </message>
    <message>
-      <DBEB>30524.0</DBEB>
-      <DMAC>29988.0</DMAC>
+      <DBEB>76612.0</DBEB>
+      <DMAC>76076.0</DMAC>
       <DT>536.0</DT>
       <Test>schedulable</Test>
-      <frequency>6.25</frequency>
-      <mes_size>00024</mes_size>
-      <name>QZJ-30</name>
-      <priority>4</priority>
-      <receiver>SXJJ</receiver>
-      <sender>QZJ</sender>
+      <emetteur>QZJ</emetteur>
+      <frequence>6.25</frequence>
+      <nom>QZJ-30</nom>
+      <recepteur>SXJJ</recepteur>
+      <taille_mes>00024</taille_mes>
    </message>
    <message>
-      <DBEB>30544.0</DBEB>
-      <DMAC>29988.0</DMAC>
+      <DBEB>76632.0</DBEB>
+      <DMAC>76076.0</DMAC>
       <DT>556.0</DT>
       <Test>schedulable</Test>
-      <frequency>6.25</frequency>
-      <mes_size>00025</mes_size>
-      <name>QZJ-28</name>
-      <priority>4</priority>
-      <receiver>SXJJ</receiver>
-      <sender>QZJ</sender>
+      <emetteur>QZJ</emetteur>
+      <frequence>6.25</frequence>
+      <nom>QZJ-28</nom>
+      <recepteur>SXJJ</recepteur>
+      <taille_mes>00025</taille_mes>
    </message>
    <message>
-      <DBEB>30684.0</DBEB>
-      <DMAC>29988.0</DMAC>
+      <DBEB>76772.0</DBEB>
+      <DMAC>76076.0</DMAC>
       <DT>696.0</DT>
       <Test>schedulable</Test>
-      <frequency>6.25</frequency>
-      <mes_size>00032</mes_size>
-      <name>QZJ-25</name>
-      <priority>4</priority>
-      <receiver>SXJJ</receiver>
-      <sender>QZJ</sender>
+      <emetteur>QZJ</emetteur>
+      <frequence>6.25</frequence>
+      <nom>QZJ-25</nom>
+      <recepteur>SXJJ</recepteur>
+      <taille_mes>00032</taille_mes>
    </message>
    <message>
-      <DBEB>30064.0</DBEB>
-      <DMAC>29988.0</DMAC>
+      <DBEB>76152.0</DBEB>
+      <DMAC>76076.0</DMAC>
       <DT>76.0</DT>
       <Test>schedulable</Test>
-      <frequency>6.25</frequency>
-      <mes_size>00001</mes_size>
-      <name>QZJ-16</name>
-      <priority>4</priority>
-      <receiver>SXJJ</receiver>
-      <sender>QZJ</sender>
+      <emetteur>QZJ</emetteur>
+      <frequence>6.25</frequence>
+      <nom>QZJ-16</nom>
+      <recepteur>SXJJ</recepteur>
+      <taille_mes>00001</taille_mes>
    </message>
    <message>
-      <DBEB>30144.0</DBEB>
-      <DMAC>29988.0</DMAC>
+      <DBEB>76232.0</DBEB>
+      <DMAC>76076.0</DMAC>
       <DT>156.0</DT>
       <Test>schedulable</Test>
-      <frequency>6.25</frequency>
-      <mes_size>00005</mes_size>
-      <name>QZJ-15</name>
-      <priority>4</priority>
-      <receiver>SXJJ</receiver>
-      <sender>QZJ</sender>
+      <emetteur>QZJ</emetteur>
+      <frequence>6.25</frequence>
+      <nom>QZJ-15</nom>
+      <recepteur>SXJJ</recepteur>
+      <taille_mes>00005</taille_mes>
    </message>
    <message>
-      <DBEB>30734.0</DBEB>
-      <DMAC>29988.0</DMAC>
+      <DBEB>76822.0</DBEB>
+      <DMAC>76076.0</DMAC>
       <DT>746.0</DT>
       <Test>schedulable</Test>
-      <frequency>6.25</frequency>
-      <mes_size>00032</mes_size>
-      <name>QZJ-12</name>
-      <priority>4</priority>
-      <receiver>EQF1</receiver>
-      <sender>QZJ</sender>
+      <emetteur>QZJ</emetteur>
+      <frequence>6.25</frequence>
+      <nom>QZJ-12</nom>
+      <recepteur>EQF1</recepteur>
+      <taille_mes>00032</taille_mes>
    </message>
    <message>
-      <DBEB>30734.0</DBEB>
-      <DMAC>29988.0</DMAC>
+      <DBEB>76822.0</DBEB>
+      <DMAC>76076.0</DMAC>
       <DT>746.0</DT>
       <Test>schedulable</Test>
-      <frequency>6.25</frequency>
-      <mes_size>00032</mes_size>
-      <name>QZJ-11</name>
-      <priority>4</priority>
-      <receiver>EQF1</receiver>
-      <sender>QZJ</sender>
+      <emetteur>QZJ</emetteur>
+      <frequence>6.25</frequence>
+      <nom>QZJ-11</nom>
+      <recepteur>EQF1</recepteur>
+      <taille_mes>00032</taille_mes>
    </message>
    <message>
-      <DBEB>30304.0</DBEB>
-      <DMAC>29988.0</DMAC>
+      <DBEB>76392.0</DBEB>
+      <DMAC>76076.0</DMAC>
       <DT>316.0</DT>
       <Test>schedulable</Test>
-      <frequency>6.25</frequency>
-      <mes_size>00013</mes_size>
-      <name>QZJ-5</name>
-      <priority>4</priority>
-      <receiver>SXJJ</receiver>
-      <sender>QZJ</sender>
+      <emetteur>QZJ</emetteur>
+      <frequence>6.25</frequence>
+      <nom>QZJ-5</nom>
+      <recepteur>SXJJ</recepteur>
+      <taille_mes>00013</taille_mes>
    </message>
    <message>
-      <DBEB>30584.0</DBEB>
-      <DMAC>29988.0</DMAC>
+      <DBEB>76672.0</DBEB>
+      <DMAC>76076.0</DMAC>
       <DT>596.0</DT>
       <Test>schedulable</Test>
-      <frequency>6.25</frequency>
-      <mes_size>00027</mes_size>
-      <name>QZJ-3</name>
-      <priority>4</priority>
-      <receiver>SXJJ</receiver>
-      <sender>QZJ</sender>
+      <emetteur>QZJ</emetteur>
+      <frequence>6.25</frequence>
+      <nom>QZJ-3</nom>
+      <recepteur>SXJJ</recepteur>
+      <taille_mes>00027</taille_mes>
    </message>
    <message>
-      <DBEB>30064.0</DBEB>
-      <DMAC>29988.0</DMAC>
+      <DBEB>76152.0</DBEB>
+      <DMAC>76076.0</DMAC>
       <DT>76.0</DT>
       <Test>schedulable</Test>
-      <frequency>6.25</frequency>
-      <mes_size>00001</mes_size>
-      <name>BHUJ-16</name>
-      <priority>4</priority>
-      <receiver>SXJJ</receiver>
-      <sender>BHUJ</sender>
+      <emetteur>BHUJ</emetteur>
+      <frequence>6.25</frequence>
+      <nom>BHUJ-16</nom>
+      <recepteur>SXJJ</recepteur>
+      <taille_mes>00001</taille_mes>
    </message>
    <message>
-      <DBEB>30394.0</DBEB>
-      <DMAC>29988.0</DMAC>
-      <DT>406.0</DT>
+      <DBEB>76838.0</DBEB>
+      <DMAC>76076.0</DMAC>
+      <DT>762.0</DT>
       <Test>schedulable</Test>
-      <frequency>6.25</frequency>
-      <mes_size>00015</mes_size>
-      <name>BHUJ-7</name>
-      <priority>4</priority>
-      <receiver>EQF1 SXJJ</receiver>
-      <sender>BHUJ</sender>
+      <emetteur>BHUJ</emetteur>
+      <frequence>6.25</frequence>
+      <nom>BHUJ-7</nom>
+      <recepteur>EQF1 SXJJ</recepteur>
+      <taille_mes>00015</taille_mes>
    </message>
    <message>
-      <DBEB>30344.0</DBEB>
-      <DMAC>29988.0</DMAC>
+      <DBEB>76432.0</DBEB>
+      <DMAC>76076.0</DMAC>
       <DT>356.0</DT>
       <Test>schedulable</Test>
-      <frequency>6.25</frequency>
-      <mes_size>00015</mes_size>
-      <name>BHUJ-6</name>
-      <priority>4</priority>
-      <receiver>SXJJ</receiver>
-      <sender>BHUJ</sender>
+      <emetteur>BHUJ</emetteur>
+      <frequence>6.25</frequence>
+      <nom>BHUJ-6</nom>
+      <recepteur>SXJJ</recepteur>
+      <taille_mes>00015</taille_mes>
    </message>
    <message>
-      <DBEB>30244.0</DBEB>
-      <DMAC>29988.0</DMAC>
+      <DBEB>76332.0</DBEB>
+      <DMAC>76076.0</DMAC>
       <DT>256.0</DT>
       <Test>schedulable</Test>
-      <frequency>6.25</frequency>
-      <mes_size>00010</mes_size>
-      <name>BHUJ-2</name>
-      <priority>4</priority>
-      <receiver>SXJJ</receiver>
-      <sender>BHUJ</sender>
+      <emetteur>BHUJ</emetteur>
+      <frequence>6.25</frequence>
+      <nom>BHUJ-2</nom>
+      <recepteur>SXJJ</recepteur>
+      <taille_mes>00010</taille_mes>
    </message>
    <message>
-      <DBEB>30064.0</DBEB>
-      <DMAC>29988.0</DMAC>
+      <DBEB>76152.0</DBEB>
+      <DMAC>76076.0</DMAC>
       <DT>76.0</DT>
       <Test>schedulable</Test>
-      <frequency>6.25</frequency>
-      <mes_size>00001</mes_size>
-      <name>BHUJ-0</name>
-      <priority>4</priority>
-      <receiver>SXJJ</receiver>
-      <sender>BHUJ</sender>
+      <emetteur>BHUJ</emetteur>
+      <frequence>6.25</frequence>
+      <nom>BHUJ-0</nom>
+      <recepteur>SXJJ</recepteur>
+      <taille_mes>00001</taille_mes>
    </message>
    <message>
-      <DBEB>30064.0</DBEB>
-      <DMAC>29988.0</DMAC>
+      <DBEB>76152.0</DBEB>
+      <DMAC>76076.0</DMAC>
       <DT>76.0</DT>
       <Test>schedulable</Test>
-      <frequency>6.25</frequency>
-      <mes_size>00001</mes_size>
-      <name>RTYJ-16</name>
-      <priority>4</priority>
-      <receiver>SXJJ</receiver>
-      <sender>RTYJ</sender>
+      <emetteur>RTYJ</emetteur>
+      <frequence>6.25</frequence>
+      <nom>RTYJ-16</nom>
+      <recepteur>SXJJ</recepteur>
+      <taille_mes>00001</taille_mes>
    </message>
    <message>
-      <DBEB>30144.0</DBEB>
-      <DMAC>29988.0</DMAC>
+      <DBEB>76232.0</DBEB>
+      <DMAC>76076.0</DMAC>
       <DT>156.0</DT>
       <Test>schedulable</Test>
-      <frequency>6.25</frequency>
-      <mes_size>00005</mes_size>
-      <name>RTYJ-8</name>
-      <priority>4</priority>
-      <receiver>SXJJ</receiver>
-      <sender>RTYJ</sender>
+      <emetteur>RTYJ</emetteur>
+      <frequence>6.25</frequence>
+      <nom>RTYJ-8</nom>
+      <recepteur>SXJJ</recepteur>
+      <taille_mes>00005</taille_mes>
    </message>
    <message>
-      <DBEB>30274.0</DBEB>
-      <DMAC>29988.0</DMAC>
+      <DBEB>76362.0</DBEB>
+      <DMAC>76076.0</DMAC>
       <DT>286.0</DT>
       <Test>schedulable</Test>
-      <frequency>6.25</frequency>
-      <mes_size>00009</mes_size>
-      <name>RTYJ-6</name>
-      <priority>4</priority>
-      <receiver>EQF1</receiver>
-      <sender>RTYJ</sender>
+      <emetteur>RTYJ</emetteur>
+      <frequence>6.25</frequence>
+      <nom>RTYJ-6</nom>
+      <recepteur>EQF1</recepteur>
+      <taille_mes>00009</taille_mes>
    </message>
    <message>
-      <DBEB>30344.0</DBEB>
-      <DMAC>29988.0</DMAC>
+      <DBEB>76432.0</DBEB>
+      <DMAC>76076.0</DMAC>
       <DT>356.0</DT>
       <Test>schedulable</Test>
-      <frequency>6.25</frequency>
-      <mes_size>00015</mes_size>
-      <name>RTYJ-3</name>
-      <priority>4</priority>
-      <receiver>SXJJ</receiver>
-      <sender>RTYJ</sender>
+      <emetteur>RTYJ</emetteur>
+      <frequence>6.25</frequence>
+      <nom>RTYJ-3</nom>
+      <recepteur>SXJJ</recepteur>
+      <taille_mes>00015</taille_mes>
    </message>
    <message>
-      <DBEB>30664.0</DBEB>
-      <DMAC>29988.0</DMAC>
+      <DBEB>76752.0</DBEB>
+      <DMAC>76076.0</DMAC>
       <DT>676.0</DT>
       <Test>schedulable</Test>
-      <frequency>6.25</frequency>
-      <mes_size>00031</mes_size>
-      <name>RTYJ-2</name>
-      <priority>4</priority>
-      <receiver>SXJJ</receiver>
-      <sender>RTYJ</sender>
+      <emetteur>RTYJ</emetteur>
+      <frequence>6.25</frequence>
+      <nom>RTYJ-2</nom>
+      <recepteur>SXJJ</recepteur>
+      <taille_mes>00031</taille_mes>
    </message>
    <message>
-      <DBEB>30064.0</DBEB>
-      <DMAC>29988.0</DMAC>
+      <DBEB>76152.0</DBEB>
+      <DMAC>76076.0</DMAC>
       <DT>76.0</DT>
       <Test>schedulable</Test>
-      <frequency>6.25</frequency>
-      <mes_size>00001</mes_size>
-      <name>RTYJ-0</name>
-      <priority>4</priority>
-      <receiver>SXJJ</receiver>
-      <sender>RTYJ</sender>
+      <emetteur>RTYJ</emetteur>
+      <frequence>6.25</frequence>
+      <nom>RTYJ-0</nom>
+      <recepteur>SXJJ</recepteur>
+      <taille_mes>00001</taille_mes>
    </message>
    <message>
-      <DBEB>30284.0</DBEB>
-      <DMAC>29988.0</DMAC>
+      <DBEB>76372.0</DBEB>
+      <DMAC>76076.0</DMAC>
       <DT>296.0</DT>
       <Test>schedulable</Test>
-      <frequency>6.25</frequency>
-      <mes_size>00012</mes_size>
-      <name>CFV-34</name>
-      <priority>4</priority>
-      <receiver>SXJJ</receiver>
-      <sender>CFV</sender>
+      <emetteur>CFV</emetteur>
+      <frequence>6.25</frequence>
+      <nom>CFV-34</nom>
+      <recepteur>SXJJ</recepteur>
+      <taille_mes>00012</taille_mes>
    </message>
    <message>
-      <DBEB>30644.0</DBEB>
-      <DMAC>29988.0</DMAC>
+      <DBEB>76732.0</DBEB>
+      <DMAC>76076.0</DMAC>
       <DT>656.0</DT>
       <Test>schedulable</Test>
-      <frequency>6.25</frequency>
-      <mes_size>00030</mes_size>
-      <name>CFV-30</name>
-      <priority>4</priority>
-      <receiver>SXJJ</receiver>
-      <sender>CFV</sender>
+      <emetteur>CFV</emetteur>
+      <frequence>6.25</frequence>
+      <nom>CFV-30</nom>
+      <recepteur>SXJJ</recepteur>
+      <taille_mes>00030</taille_mes>
    </message>
    <message>
-      <DBEB>30544.0</DBEB>
-      <DMAC>29988.0</DMAC>
+      <DBEB>76632.0</DBEB>
+      <DMAC>76076.0</DMAC>
       <DT>556.0</DT>
       <Test>schedulable</Test>
-      <frequency>6.25</frequency>
-      <mes_size>00025</mes_size>
-      <name>CFV-29</name>
-      <priority>4</priority>
-      <receiver>SXJJ</receiver>
-      <sender>CFV</sender>
+      <emetteur>CFV</emetteur>
+      <frequence>6.25</frequence>
+      <nom>CFV-29</nom>
+      <recepteur>SXJJ</recepteur>
+      <taille_mes>00025</taille_mes>
    </message>
    <message>
-      <DBEB>30544.0</DBEB>
-      <DMAC>29988.0</DMAC>
+      <DBEB>76632.0</DBEB>
+      <DMAC>76076.0</DMAC>
       <DT>556.0</DT>
       <Test>schedulable</Test>
-      <frequency>6.25</frequency>
-      <mes_size>00025</mes_size>
-      <name>CFV-27</name>
-      <priority>4</priority>
-      <receiver>SXJJ</receiver>
-      <sender>CFV</sender>
+      <emetteur>CFV</emetteur>
+      <frequence>6.25</frequence>
+      <nom>CFV-27</nom>
+      <recepteur>SXJJ</recepteur>
+      <taille_mes>00025</taille_mes>
    </message>
    <message>
-      <DBEB>30064.0</DBEB>
-      <DMAC>29988.0</DMAC>
+      <DBEB>76152.0</DBEB>
+      <DMAC>76076.0</DMAC>
       <DT>76.0</DT>
       <Test>schedulable</Test>
-      <frequency>6.25</frequency>
-      <mes_size>00001</mes_size>
-      <name>CFV-16</name>
-      <priority>4</priority>
-      <receiver>SXJJ</receiver>
-      <sender>CFV</sender>
+      <emetteur>CFV</emetteur>
+      <frequence>6.25</frequence>
+      <nom>CFV-16</nom>
+      <recepteur>SXJJ</recepteur>
+      <taille_mes>00001</taille_mes>
    </message>
    <message>
-      <DBEB>30644.0</DBEB>
-      <DMAC>29988.0</DMAC>
+      <DBEB>76732.0</DBEB>
+      <DMAC>76076.0</DMAC>
       <DT>656.0</DT>
       <Test>schedulable</Test>
-      <frequency>6.25</frequency>
-      <mes_size>00030</mes_size>
-      <name>CFV-13</name>
-      <priority>4</priority>
-      <receiver>SXJJ</receiver>
-      <sender>CFV</sender>
+      <emetteur>CFV</emetteur>
+      <frequence>6.25</frequence>
+      <nom>CFV-13</nom>
+      <recepteur>SXJJ</recepteur>
+      <taille_mes>00030</taille_mes>
    </message>
    <message>
-      <DBEB>30064.0</DBEB>
-      <DMAC>29988.0</DMAC>
+      <DBEB>76152.0</DBEB>
+      <DMAC>76076.0</DMAC>
       <DT>76.0</DT>
       <Test>schedulable</Test>
-      <frequency>6.25</frequency>
-      <mes_size>00001</mes_size>
-      <name>BHT-16</name>
-      <priority>4</priority>
-      <receiver>SXJJ</receiver>
-      <sender>BHT</sender>
+      <emetteur>BHT</emetteur>
+      <frequence>6.25</frequence>
+      <nom>BHT-16</nom>
+      <recepteur>SXJJ</recepteur>
+      <taille_mes>00001</taille_mes>
    </message>
    <message>
-      <DBEB>30164.0</DBEB>
-      <DMAC>29988.0</DMAC>
+      <DBEB>76252.0</DBEB>
+      <DMAC>76076.0</DMAC>
       <DT>176.0</DT>
       <Test>schedulable</Test>
-      <frequency>6.25</frequency>
-      <mes_size>00006</mes_size>
-      <name>BHT-6</name>
-      <priority>4</priority>
-      <receiver>SXJJ</receiver>
-      <sender>BHT</sender>
+      <emetteur>BHT</emetteur>
+      <frequence>6.25</frequence>
+      <nom>BHT-6</nom>
+      <recepteur>SXJJ</recepteur>
+      <taille_mes>00006</taille_mes>
    </message>
    <message>
-      <DBEB>30064.0</DBEB>
-      <DMAC>29988.0</DMAC>
+      <DBEB>76152.0</DBEB>
+      <DMAC>76076.0</DMAC>
       <DT>76.0</DT>
       <Test>schedulable</Test>
-      <frequency>6.25</frequency>
-      <mes_size>00001</mes_size>
-      <name>HULP-16</name>
-      <priority>4</priority>
-      <receiver>SXJJ</receiver>
-      <sender>HULP</sender>
+      <emetteur>HULP</emetteur>
+      <frequence>6.25</frequence>
+      <nom>HULP-16</nom>
+      <recepteur>SXJJ</recepteur>
+      <taille_mes>00001</taille_mes>
    </message>
    <message>
-      <DBEB>30164.0</DBEB>
-      <DMAC>29988.0</DMAC>
+      <DBEB>76252.0</DBEB>
+      <DMAC>76076.0</DMAC>
       <DT>176.0</DT>
       <Test>schedulable</Test>
-      <frequency>6.25</frequency>
-      <mes_size>00006</mes_size>
-      <name>HULP-7</name>
-      <priority>4</priority>
-      <receiver>SXJJ</receiver>
-      <sender>HULP</sender>
+      <emetteur>HULP</emetteur>
+      <frequence>6.25</frequence>
+      <nom>HULP-7</nom>
+      <recepteur>SXJJ</recepteur>
+      <taille_mes>00006</taille_mes>
    </message>
    <message>
-      <DBEB>30064.0</DBEB>
-      <DMAC>29988.0</DMAC>
+      <DBEB>76152.0</DBEB>
+      <DMAC>76076.0</DMAC>
       <DT>76.0</DT>
       <Test>schedulable</Test>
-      <frequency>6.25</frequency>
-      <mes_size>00001</mes_size>
-      <name>DYYJ-206</name>
-      <priority>4</priority>
-      <receiver>SXJJ</receiver>
-      <sender>DYYJ</sender>
+      <emetteur>DYYJ</emetteur>
+      <frequence>6.25</frequence>
+      <nom>DYYJ-206</nom>
+      <recepteur>SXJJ</recepteur>
+      <taille_mes>00001</taille_mes>
    </message>
    <message>
-      <DBEB>30064.0</DBEB>
-      <DMAC>29988.0</DMAC>
+      <DBEB>76152.0</DBEB>
+      <DMAC>76076.0</DMAC>
       <DT>76.0</DT>
       <Test>schedulable</Test>
-      <frequency>6.25</frequency>
-      <mes_size>00001</mes_size>
-      <name>DYYJ-16</name>
-      <priority>4</priority>
-      <receiver>SXJJ</receiver>
-      <sender>DYYJ</sender>
+      <emetteur>DYYJ</emetteur>
+      <frequence>6.25</frequence>
+      <nom>DYYJ-16</nom>
+      <recepteur>SXJJ</recepteur>
+      <taille_mes>00001</taille_mes>
    </message>
    <message>
-      <DBEB>30184.0</DBEB>
-      <DMAC>29988.0</DMAC>
+      <DBEB>76272.0</DBEB>
+      <DMAC>76076.0</DMAC>
       <DT>196.0</DT>
       <Test>schedulable</Test>
-      <frequency>6.25</frequency>
-      <mes_size>00007</mes_size>
-      <name>DYYJ-2</name>
-      <priority>4</priority>
-      <receiver>SXJJ</receiver>
-      <sender>DYYJ</sender>
+      <emetteur>DYYJ</emetteur>
+      <frequence>6.25</frequence>
+      <nom>DYYJ-2</nom>
+      <recepteur>SXJJ</recepteur>
+      <taille_mes>00007</taille_mes>
    </message>
    <message>
-      <DBEB>30064.0</DBEB>
-      <DMAC>29988.0</DMAC>
+      <DBEB>76152.0</DBEB>
+      <DMAC>76076.0</DMAC>
       <DT>76.0</DT>
       <Test>schedulable</Test>
-      <frequency>6.25</frequency>
-      <mes_size>00001</mes_size>
-      <name>DYYJ-0</name>
-      <priority>4</priority>
-      <receiver>SXJJ</receiver>
-      <sender>DYYJ</sender>
+      <emetteur>DYYJ</emetteur>
+      <frequence>6.25</frequence>
+      <nom>DYYJ-0</nom>
+      <recepteur>SXJJ</recepteur>
+      <taille_mes>00001</taille_mes>
    </message>
 </fichier>
