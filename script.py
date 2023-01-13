@@ -20,12 +20,11 @@ def xml_to_dict(xmlfile):
     return xml_dict
 
 
-def message_length(message, messages_list, BC="SXJJ"):
+def message_length(message, BC="SXJJ"):
     """Computes the total message length in bits taking into account the overhead length and if it is sent to many receivers
 
     Args:
         message (dictionary): must contain the message's characteristics in its keys like: 'emeteur', 'recepteur' and 'taille_mes'.
-        messages_list (list): list of dictionaries containing all the messages and their characteristics.
         BC (str, optional): the Master's name. Defaults to "SXJJ".
 
     Returns:
@@ -33,23 +32,10 @@ def message_length(message, messages_list, BC="SXJJ"):
     """    
     # L = 20(bits/word) * n(word) + overhead_com (depends on the communication type BC to RT, RT to BC, RT to RT)
     sender = message['emetteur']
-    receivers = message['recepteur'].split()
+    receiver = message['recepteur']
     
-    if 'TOUS' not in receivers:
-        L = 0
-        for receiver in receivers:
-            overhead_com = 56 if (sender == BC) or (receiver == BC) else 106
-            L += (20 * int(message['taille_mes']) + overhead_com)
-        
-    else: # recepteur = 'TOUS'
-        components = get_components(messages_list)
-        if sender == BC:
-            overhead_com = 56
-            L = (20 * int(message['taille_mes']) + overhead_com) * (len(components) - 1)
-        
-        else:
-            L = (20 * int(message['taille_mes']) + 106) * (len(components) - 2) + (
-                20 * int(message['taille_mes']) + 56)
+    overhead_com = 56 if (sender == BC) or (receiver == BC) else 106
+    L = 20 * int(message['taille_mes']) + overhead_com
         
     return L
 
@@ -72,7 +58,7 @@ def get_components(messages_list):
     return components_list
             
     
-def transmission_delay(message,messages_list, link_speed=1, BC="SXJJ"):
+def transmission_delay(message, link_speed=1, BC="SXJJ"):
     """Calculates the transmission delay of message.
 
     Args:
@@ -83,12 +69,12 @@ def transmission_delay(message,messages_list, link_speed=1, BC="SXJJ"):
     Returns:
         float: the transmission delay of a message in microseconds.
     """
-    L = message_length(message,messages_list, BC)
+    L = message_length(message, BC)
     return L/link_speed
 
 
 def quicksort(messages_list):
-    """ Recursive function. Sorts the list of dictionaries in the ascending order of the key 'frequence'.
+    """ Recursive function. Sorts the list of dictionaries in the descending order of the key 'frequence'.
 
     Args:
         messages_list (list): list of dictionaries containing all the messages and their characteristics.
@@ -291,7 +277,7 @@ def main():
                              'taille_mes': message['taille_mes'],
                              'emetteur': message['emetteur'],
                              'recepteur': message['recepteur'],
-                             'DT' :  transmission_delay(message, results_list)  })
+                             'DT' :  transmission_delay(message)  })
 
     print('2 - transmission delays are calculated')    
     print('--------------------------------------------')
